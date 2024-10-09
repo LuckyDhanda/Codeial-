@@ -1,0 +1,17 @@
+<!-- views/layout.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body style="background-color: bisque;">
+    <%- include('partials/_header'); %>
+    
+    <!-- This is where the dynamic content (e.g., home.ejs content) will be injected -->
+    <%- body %>
+
+    <%- include('partials/_footer'); %>
+</body>
+</html>

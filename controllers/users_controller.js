@@ -1,5 +1,5 @@
 module.exports.users = function(req, res){
-    return res.send("<h1>Hello from Users</h1>");
+    return res.render('users', {title : 'Codeial'});
 }
 
 module.exports.another = function(req, res){
