@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <%- style %>
 </head>
-<body style="background-color: bisque;">
-    <%- include('partials/_header'); %>
+<body>
+    <!-- <%- include('partials/_header') %> -->
     
-    <!-- This is where the dynamic content (e.g., home.ejs content) will be injected -->
+    <!-- This is where the dynamic content (e.g., home.ejs, users.ejs, etc content) will be injected -->
     <%- body %>
 
-    <%- include('partials/_footer'); %>
+    <!-- <%- include('partials/_footer') %> -->
+    <%- script %>
 </body>
 </html>
