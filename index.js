@@ -2,6 +2,8 @@ const express = require ('express');
 const app =express();
 const port = 3000;
 
+const cookieParser = require('cookie-parser');
+
 const db = require('./config/mongoose');
 
 // Step 1: Set up the view engine and layout middleware
@@ -18,6 +20,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('assets'));
 
+a
 
 // Step 2: Define your routes
 const router = require('./routes/index');
